@@ -70,6 +70,71 @@ public static void displayMenu() {
     System.out.print("\nEnter your choice: ");
 }
 
+private static void performOperation(Scanner scanner, int choice) {
+    /*try {
+        switch (choice) {
+            case 1:
+                performTwoNumberOperation(scanner, "Addition", "add");
+                break;
+            case 2:
+                performTwoNumberOperation(scanner, "Subtraction", "subtract");
+                break;
+            case 3:
+                performTwoNumberOperation(scanner, "Multiplication", "multiply");
+                break;
+            case 4:
+                performTwoNumberOperation(scanner, "Division", "divide");
+                break;
+            case 5:
+                performOneNumberOperation(scanner, "Square Root", "sqrt");
+                break;
+            case 6:
+                performTwoNumberOperation(scanner, "Power", "power");
+                break;
+            case 7:
+                performOneNumberOperation(scanner, "Natural Logarithm", "ln");
+                break;
+            case 8:
+                performOneNumberOperation(scanner, "Logarithm Base 10", "log10");
+                break;
+            case 9:
+                performOneNumberOperation(scanner, "Absolute Value", "abs");
+                break;
+            case 10:
+                performTrigOperation(scanner, "Sine", "sin");
+                break;
+            case 11:
+                performTrigOperation(scanner, "Cosine", "cos");
+                break;
+            case 12:
+                performTrigOperation(scanner, "Tangent", "tan");
+                break;
+            case 13:
+                performOneNumberOperation(scanner, "Round", "round");
+                break;
+            case 14:
+                performOneNumberOperation(scanner, "Ceiling", "ceil");
+                break;
+            case 15:
+                performOneNumberOperation(scanner, "Floor", "floor");
+                break;
+            case 16:
+                performTwoNumberOperation(scanner, "Minimum", "min");
+                break;
+            case 17:
+                performTwoNumberOperation(scanner, "Maximum", "max");
+                break;
+            case 18:
+                toggleOutputFormat();
+                break;
+            default:
+                System.out.println("Error: Invalid menu choice. Please select a number from 0-18.");
+        }
+    } catch (InputMismatchException e) {
+        System.out.println("Error: Please enter a valid number.");
+        scanner.nextLine(); // Clear invalid input
+    }*/
+}
 
 
 
