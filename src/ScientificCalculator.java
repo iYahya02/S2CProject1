@@ -203,7 +203,44 @@ public static void displayMenu() {
     }
 } */
 
+/*private static void performOneNumberOperation(Scanner scanner, String operationName, String operation) {
+    System.out.print("Enter number: ");
+    double num = scanner.nextDouble();
 
+    double result = 0;
+    boolean validOperation = true;
+
+    switch (operation) {
+        case "sqrt":
+            result = calculateSquareRoot(num);
+            break;
+        case "ln":
+            result = calculateNaturalLogarithm(num);
+            break;
+        case "log10":
+            result = calculateLogarithmBase10(num);
+            break;
+        case "abs":
+            result = calculateAbsoluteValue(num);
+            break;
+        case "round":
+            long roundResult = roundNumber(num);
+            System.out.println(operationName + " of " + formatNumber(num) + " = " + roundResult);
+            return;
+        case "ceil":
+            result = ceilingNumber(num);
+            break;
+        case "floor":
+            result = floorNumber(num);
+            break;
+        default:
+            validOperation = false;
+    }
+
+    if (validOperation && !Double.isNaN(result)) {
+        System.out.println(operationName + " of " + formatNumber(num) + " = " + formatNumber(result));
+    }
+}*/
 
 
 static class InputExample {
