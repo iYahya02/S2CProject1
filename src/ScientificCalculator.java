@@ -284,6 +284,35 @@ public static void displayMenu() {
 }*/
 
 
+/*private static void performTrigOperation(Scanner scanner, String operationName, String operation) {
+    System.out.print("Enter angle: ");
+    double angle = scanner.nextDouble();
+
+    System.out.print("Is the angle in (1) Degrees or (2) Radians? Enter 1 or 2: ");
+    int angleUnit = scanner.nextInt();
+
+    double result = 0;
+    boolean validOperation = true;
+    String unitString = (angleUnit == 1) ? "degrees" : "radians";
+
+    switch (operation) {
+        case "sin":
+            result = calculateSine(angle, angleUnit == 1);
+            break;
+        case "cos":
+            result = calculateCosine(angle, angleUnit == 1);
+            break;
+        case "tan":
+            result = calculateTangent(angle, angleUnit == 1);
+            break;
+        default:
+            validOperation = false;
+    }
+
+    if (validOperation && !Double.isNaN(result)) {
+        System.out.println(operationName + " of " + formatNumber(angle) + " " + unitString + " = " + formatNumber(result));
+    }
+}*/
 
 
 
