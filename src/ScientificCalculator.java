@@ -314,7 +314,19 @@ public static void displayMenu() {
     }
 }*/
 
+/*private static void toggleOutputFormat() {
+    useScientificNotation = !useScientificNotation;
+    System.out.println("Output format changed to: " +
+            (useScientificNotation ? "Scientific Notation" : "Simple Decimal"));
+}
 
+private static String formatNumber(double number) {
+    if (useScientificNotation) {
+        return scientificFormat.format(number);
+    } else {
+        return decimalFormat.format(number);
+    }
+}*/
 
 static class InputExample {
     public static void main(String[] args) {
