@@ -350,7 +350,97 @@ public static double divide(double num1, double num2) {
     return num1 / num2;
 }
 
-static class InputExample {
+
+// Scientific Operations Methods
+public static double calculateSquareRoot(double num) {
+    if (num < 0) {
+        System.out.println("Error: Square root of negative number is undefined in real numbers.");
+        return Double.NaN;
+    }
+    return Math.sqrt(num);
+}
+
+public static double calculatePower(double base, double exponent) {
+    return Math.pow(base, exponent);
+}
+
+public static double calculateSine(double angle, boolean isDegrees) {
+    double radians = isDegrees ? Math.toRadians(angle) : angle;
+    return Math.sin(radians);
+}
+
+public static double calculateCosine(double angle, boolean isDegrees) {
+    double radians = isDegrees ? Math.toRadians(angle) : angle;
+    return Math.cos(radians);
+}
+
+public static double calculateTangent(double angle, boolean isDegrees) {
+    double radians = isDegrees ? Math.toRadians(angle) : angle;
+
+    // Check for undefined angles (90°, 270°, etc.)
+    if (isDegrees) {
+        double normalizedAngle = ((angle % 360) + 360) % 360; // Normalize to 0-360
+        if (Math.abs(normalizedAngle - 90) < 1e-10 || Math.abs(normalizedAngle - 270) < 1e-10) {
+            System.out.println("Error: Tangent is undefined at " + angle + " degrees.");
+            return Double.NaN;
+        }
+    } else {
+        // Check for π/2, 3π/2, etc. in radians
+        double normalizedRadians = radians % (2 * Math.PI);
+        if (Math.abs(normalizedRadians - Math.PI/2) < 1e-10 ||
+                Math.abs(normalizedRadians - 3*Math.PI/2) < 1e-10) {
+            System.out.println("Error: Tangent is undefined at " + angle + " radians.");
+            return Double.NaN;
+        }
+    }
+
+    return Math.tan(radians);
+}
+
+public static double calculateNaturalLogarithm(double num) {
+    if (num <= 0) {
+        System.out.println("Error: Natural logarithm is undefined for non-positive numbers.");
+        return Double.NaN;
+    }
+    return Math.log(num);
+}
+
+public static double calculateLogarithmBase10(double num) {
+    if (num <= 0) {
+        System.out.println("Error: Logarithm base 10 is undefined for non-positive numbers.");
+        return Double.NaN;
+    }
+    return Math.log10(num);
+}
+
+public static double calculateAbsoluteValue(double num) {
+    return Math.abs(num);
+}
+
+// Rounding Methods
+public static long roundNumber(double num) {
+    return Math.round(num);
+}
+
+public static double ceilingNumber(double num) {
+    return Math.ceil(num);
+}
+
+public static double floorNumber(double num) {
+    return Math.floor(num);
+}
+
+// Comparison Methods
+public static double findMin(double num1, double num2) {
+    return Math.min(num1, num2);
+}
+
+public static double findMax(double num1, double num2) {
+    return Math.max(num1, num2);
+}
+
+
+/*static class InputExample {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -367,5 +457,5 @@ static class InputExample {
         System.out.printf("You are %d years old.%n", age);
         System.out.printf("and you are %s meters tall.%n", height);
     }
-}
+}*/
 
