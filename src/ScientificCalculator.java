@@ -243,6 +243,50 @@ public static void displayMenu() {
 }*/
 
 
+/*private static void performTwoNumberOperation(Scanner scanner, String operationName, String operation) {
+    System.out.print("Enter first number: ");
+    double num1 = scanner.nextDouble();
+    System.out.print("Enter second number: ");
+    double num2 = scanner.nextDouble();
+
+    double result = 0;
+    boolean validOperation = true;
+
+    switch (operation) {
+        case "add":
+            result = add(num1, num2);
+            break;
+        case "subtract":
+            result = subtract(num1, num2);
+            break;
+        case "multiply":
+            result = multiply(num1, num2);
+            break;
+        case "divide":
+            result = divide(num1, num2);
+            break;
+        case "power":
+            result = calculatePower(num1, num2);
+            break;
+        case "min":
+            result = findMin(num1, num2);
+            break;
+        case "max":
+            result = findMax(num1, num2);
+            break;
+        default:
+            validOperation = false;
+    }
+
+    if (validOperation && !Double.isNaN(result) && !Double.isInfinite(result)) {
+        System.out.println(operationName + " of " + formatNumber(num1) + " and " + formatNumber(num2) + " = " + formatNumber(result));
+    }
+}*/
+
+
+
+
+
 static class InputExample {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
